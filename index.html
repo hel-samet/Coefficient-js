@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <style>
+    button{
+        padding: 5px 15px;
+        font-size: 30px;
+    }
+    input{
+        width: 20%;
+        height: 50px;
+
+    }
+    label{
+        font-size: 20px;
+        color: red;
+        font-weight: 600;
+    }
+    #text-num1{
+        font-size: 20px;
+        color: orange;
+        font-weight: 700;
+    }
+    #text-num2{
+        font-size: 20px;
+        color: black;
+        font-weight: 700;
+    }
+    #text-result{
+        color: brown;
+        font-weight: 700;
+        font-size: 20px;
+    }
+  </style>
+<body>
+    
+  <label for="">Num1</label>
+ <input type="text" name="" id="text-num1">
+  <label for="">Num2</label>
+ <input type="text" name="" id="text-num2">
+  <label for="">Result</label>
+ <input type="text" name="" id="text-result">
+ <button type="button" value="" onclick="bok()">+</button>
+ <button type="button" value="" onclick="dok()">-</button>
+ <button type="button" value="" onclick="kon()">*</button>
+ <button type="button" value="" onclick="jek()">/</button>
+
+
+</body>
+
+  <script>
+    function bok(){
+       var Num1= document.getElementById("text-num1");
+       var Num2= document.getElementById("text-num2");
+       var result= document.getElementById("text-result");
+           result.value= parseFloat( Num1.value) + parseInt(Num2.value) ;
+    }
+
+    function dok(){
+       var Num1= document.getElementById("text-num1");
+       var Num2= document.getElementById("text-num2");
+       var result= document.getElementById("text-result");
+           result.value= parseFloat( Num1.value) - parseInt(Num2.value) ;
+    }
+
+    function kon(){
+       var Num1= document.getElementById("text-num1");
+       var Num2= document.getElementById("text-num2");
+       var result= document.getElementById("text-result");
+           result.value= parseFloat( Num1.value) * parseInt(Num2.value) ;
+    }
+
+    function jek(){
+       var Num1= document.getElementById("text-num1");
+       var Num2= document.getElementById("text-num2");
+       var result= document.getElementById("text-result");
+           result.value= parseFloat( Num1.value) / parseInt(Num2.value) ;
+    }
+  </script>
+</html>
